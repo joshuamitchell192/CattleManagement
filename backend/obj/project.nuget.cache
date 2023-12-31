@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "NA5Qd88l1uW22GIuPSEYENpAblkmbgNHPFvzTUrTOoA3ejWGmDBm2p5Dozlmr5EEuh4ueOS30l/5pygMGXkvyA==",
+  "success": true,
+  "projectFilePath": "/Users/joshuamitchell/Development/CattleManagement/frontend/backend/backend.fsproj",
+  "expectedPackageFiles": [
+    "/Users/joshuamitchell/.nuget/packages/fsharp.core/8.0.100/fsharp.core.8.0.100.nupkg.sha512"
+  ],
+  "logs": []
+}
