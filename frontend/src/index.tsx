@@ -3,13 +3,33 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.css';
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
+import Animals from './routes/animals/Animals';
+import Home from './routes/home/Home';
+import Treatments from './routes/treatments/Treatments';
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route element={<App />}>
+      <Route path="/" element={<Home />}></Route>
+      <Route path="animals" element={<Animals />}></Route>
+      <Route path="treatments" element={<Treatments />}></Route>
+    </Route>
+  )
+)
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
